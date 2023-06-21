@@ -166,6 +166,12 @@ p {
     text-transform: uppercase;
 }
 
+.fine-print {
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: #858585;
+}
+
 /* =================
     Flex containers
    ================= */
@@ -202,7 +208,7 @@ p {
     background-size: cover;
     /* You can declare the background shorthand
     property like this:
-    background: #9480e4 url(images/intro-bg.png)
+    background: #9480e4 url(images/intro-bg.png) */
 }
 
 /* ====================
@@ -234,6 +240,49 @@ p {
     Form
    ================= */
    
+/* 
+  Challenge: Style the form inputs
+    - Display each input on a separate line so they
+      expand to the full width of their container
+    - Use a bottom margin to create space between the input elements
+    - Apply a padding in em that's equal to half the input's
+      font-size to all 4 sides
+*/
+
+input {
+  font-family: inherit; /* Will give input element the same value as its parent element */
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 0.75em;
+  border: 2px solid #d1d5db;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #8a71ec;
+  background-color: #e6e8ec;
+}
+/* Another Solution:
+
+/* input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.75em;
+  padding: 0.5em;
+} */
+
+
+/* Another Challenge: 
+
+/* 
+  Challenge: Style the form inputs
+    - Give the inputs a solid 2px border using the value #d1d5db
+    - Round the corners of the input fields by 5px
+    - On focus, update an input’s border color to #8a71ec
+      and background color to #e6e8ec
+*/
+
 
 /* =================
     Media queries 
