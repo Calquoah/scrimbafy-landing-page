@@ -99,6 +99,15 @@
 
 /* Cleaner Code */
 
+/* Using the box-sizing property
+to make sure the input fields as 
+well as the button are the same 
+length */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 
 body {
     font-family: 'Source Sans 3', sans-serif;
@@ -258,7 +267,16 @@ p {
 
 .img-main {
     width: 120px;
-    border-radius: 50%;
+    border-radius: 25%;
+    margin-top: 0.5em;
+}
+
+/* Condensing the paragraph text
+like this */
+
+.main-content p,
+form {
+  max-width: 450px;
 }
 
 /* =================
